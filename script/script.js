@@ -67,5 +67,12 @@ nextBtn.addEventListener('click', () => {
     return showNextPerson(currentItem)
 })
 
-
+prevBtn.addEventListener('click', () => {
+    console.log("clicked")
+    currentItem--;
+    if(currentItem < 0){
+        currentItem = reviews.length - 1
+    }
+    showNextPerson(currentItem);
+})
 

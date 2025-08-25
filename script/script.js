@@ -49,7 +49,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
     info.textContent = item.text;
 })
 
+function showNextPerson(person){
+    const item = reviews[person];
 
+    image.src = item.img;
+    author.textContent = item.name;
+    job.textContent = item.job;
+    info.textContent = item.text;
+}
 
 
 

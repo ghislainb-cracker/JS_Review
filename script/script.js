@@ -58,7 +58,14 @@ function showNextPerson(person){
     info.textContent = item.text;
 }
 
-
+nextBtn.addEventListener('click', () => {
+    console.log("clicked")
+    currentItem++;
+    if(currentItem > reviews.length - 1){
+        currentItem = 0
+    }
+    return showNextPerson(currentItem)
+})
 
 
 
